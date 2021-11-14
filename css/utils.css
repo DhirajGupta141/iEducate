@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.font1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font2 {
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+.btn {
+    background: none;
+    border: 2px solid black;
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(15, 187, 30);
+    border: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.active {
+    background-color: rgb(223, 18, 18);
+}
+
+.sticky-navigation {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 2;
+}
+
+.changed-bg {
+    background: #FF8008;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFC837, #FF8008);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFC837, #FF8008);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: background 1.5s ease-in-out;
+}

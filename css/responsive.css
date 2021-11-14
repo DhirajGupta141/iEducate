@@ -1,0 +1,136 @@
+/* Making the things in center
+display: flex;
+justify-content: center;
+align-items: center;
+*/
+
+@media only screen and (max-width:1100px) {
+    .burger {
+        display: block;
+    }
+    .navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 277px;
+        /*auto height will also do the work but here we are giving height to see the transition effect*/
+        color: black;
+        transition: all 0.6s ease-out;
+    }
+    .navbar {
+        flex-direction: column;
+    }
+    ul {
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-left {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*Important*/
+        height: auto;
+    }
+    .nav-right {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    /* Remember this below height and visibility is applied on responsiveness */
+    .height-nav-resp {
+        height: 64px;
+    }
+    .visibility-resp {
+        opacity: 0;
+    }
+    /* .nav-right input {
+        font-size: 17px;
+        padding: 3px 5px;
+        border: 2px solid black;
+        border-radius: 15px;
+        margin-right: 7px;
+    } */
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* About Us Responsive Code  start*/
+    .about-container {
+        /* The Below two line width and marging is required to bring things in center */
+        /* Increasing the width from 85% to 90% here in mobile devices */
+        width: 90%;
+        margin: auto;
+        /* border: 1px solid red; */
+        padding: 13px 0px;
+    }
+    .about-container img {
+        width: 30%;
+        border-radius: 50%;
+    }
+    .about-container h2 {
+        font-size: medium;
+        margin: 10px 0px;
+    }
+    .about-container p {
+        padding: 5px 10px;
+    }
+    .about-sec {
+        background-color: rgb(249 244 239);
+        /* hahahahahhahahahahha we dont need to give the fixed height to this auto is fine we need not to worry */
+        height: auto;
+        margin: 5px 0px;
+    }
+    /* About Us Responsive Code  End*/
+    /* Service Responsive Code  start*/
+    .services-sec {
+        /* hahahahahah  :) again we need to remove the hardcoaded height to make responsive*/
+        /* height: 906px; */
+        height: auto;
+    }
+    .first-service,
+    .second-service,
+    .third-service {
+        flex-direction: column;
+    }
+    /* Much needed thing to make the thing work hahahahha ;) */
+    .second-service {
+        flex-direction: column-reverse;
+    }
+    /* Service Responsive Code  End*/
+    /* contact Responsive Code  End*/
+    .contact-container h2 {
+        font-size: large;
+        padding-top: 8px;
+        color: blanchedalmond;
+    }
+    form .name,
+    .email,
+    .textarea-contact {
+        width: 90%;
+    }
+    form .name-input,
+    .email-input,
+    .textarea-input {
+        width: 100%;
+        padding: 2px 2px;
+        font-size: 15px;
+        margin: 7px;
+    }
+    /* contact Responsive Code  End*/
+    /* Footer Responsive Start */
+    .foot {
+        width: 100%;
+        height: 56px;
+        background: darkorange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: smaller;
+    }
+    /* Footer Responsive end */
+}
